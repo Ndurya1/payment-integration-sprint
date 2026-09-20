@@ -7,6 +7,7 @@ class Settings(BaseSettings):
     daraja_shortcode: str
     daraja_passkey: str
     daraja_callback_url: str
+    database_url: str
 
     model_config = SettingsConfigDict(
         env_file=".env",
